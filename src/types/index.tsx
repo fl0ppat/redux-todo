@@ -1,4 +1,7 @@
 export interface Task {
-  data: string
+  title: string,
+  data?: string | Element
+  expired?: boolean
   status: boolean
+  uuid: string
 }
