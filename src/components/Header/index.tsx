@@ -1,3 +1,4 @@
+import { RepeatClockIcon } from "@chakra-ui/icons";
 import { Box, Button, Center, Text } from "@chakra-ui/react";
 
 export const Header = ({ count }: { count: number }) => {
@@ -23,6 +24,23 @@ export const Header = ({ count }: { count: number }) => {
         >
           {count}
         </Box>
+        <Button
+          border={0}
+          background="#e59644"
+          fontWeight="bold"
+          color="#fff"
+          h="fit-content"
+          p="8px 8px"
+          borderRadius={8}
+          colorScheme="blue"
+          boxShadow="4px 4px 8px #cfcfcf, -4px -4px 8px #fff"
+          alignItems="center"
+          transition='background-color .3s'
+          cursor='pointer'
+          _hover={{backgroundColor: '#f19a3f'}}
+        >
+          <RepeatClockIcon w={19} h={19} />
+        </Button>
         <Button
           border={0}
           background="#12a5dd"
